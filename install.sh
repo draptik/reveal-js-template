@@ -14,10 +14,17 @@ rm -rf reveal.js/.git
 cd reveal.js && npm install
 
 ## Example using plain copy `cp` command:
-cp $currentdir/template/index.html $currentdir/reveal.js/index.html
-cp $currentdir/talk/talk-template.md $currentdir/reveal.js/talk-template.md
+##
+#cp $currentdir/template/index.html $currentdir/reveal.js/index.html
+#cp $currentdir/talk/talk-template.md $currentdir/reveal.js/talk-template.md
 
 ## Example using symlinks `ln -s`:
-#ln -s $currentdir/reveal.js/index.html $currentdir/template/index.html
-#ln -s $currentdir/reveal.js/talk-template.md $currentdir/talk/talk-template.md  
+##
+#mv $currentdir/reveal.js/index.html $currentdir/reveal.js/index.html.original > /dev/null 2>&1
+#mv $currentdir/reveal.js/talk-template.md  $currentdir/reveal.js/talk-template.md.original > /dev/null 2>&1
+#cd $currentdir && ln -s template/index.html reveal.js/
+#cd $currentdir && ln -s talk/talk-template.md reveal.js/
+
+## Remove template git
+#rm -rf .git
 
