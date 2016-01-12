@@ -22,8 +22,8 @@ cd reveal.js && npm install
 ##
 #mv $currentdir/reveal.js/index.html $currentdir/reveal.js/index.html.original > /dev/null 2>&1
 #mv $currentdir/reveal.js/talk-template.md  $currentdir/reveal.js/talk-template.md.original > /dev/null 2>&1
-#cd $currentdir && ln -s template/index.html reveal.js/
-#cd $currentdir && ln -s talk/talk-template.md reveal.js/
+#cd $currentdir/reveal.js/ && ln -s ../template/index.html 
+#cd $currentdir/reveal.js/ && ln -s ../talk/talk-template.md
 
 ## Remove template git
 #rm -rf .git
