@@ -1,10 +1,16 @@
-# Prerequisites
+# Lessons learned...
+
+Install `yeoman` and use the `generator-reveal` package.
+
+# Junk
+
+## Prerequisites
 
 - git
 - node
 - grunt
 
-# Instructions
+## Instructions
 
 tl/dr `./install.sh` otherwhise
 
@@ -15,12 +21,11 @@ tl/dr `./install.sh` otherwhise
 - Softlink/Copy `talk/talk-template.md` to `reveal.js/talk-template.md`: `cp talk/talk-template.md reveal.js/talk-template.md`
 
 
-## Create your own git repo
+### Create your own git repo
 
 `rm -rf $currentdir/.git`
 
-
-## Now we can commit everything to our own repository!
+### Now we can commit everything to our own repository!
 
 ```
 git add .
