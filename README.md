@@ -1,6 +1,6 @@
 # Lessons learned...
 
-Install `yeoman` and use the `generator-reveal` package.
+Install `yeoman` and use the [`generator-reveal`](https://github.com/slara/generator-reveal) package.
 
 # Junk
 
