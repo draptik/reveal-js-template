@@ -1,0 +1,86 @@
+
+/* Code ------------------------------------------------ */
+
+/* Custom font for code samples: Fira Code ;-) */
+.reveal code {
+  font-family: "Fira Code", "Lato", sans-serif;
+}
+
+/* Tweak size of text in pre (code) blocks */
+.reveal pre {
+    font-size: 0.49em; /* default value: 0.55em */
+    line-height: 1.2em;  /* default value: 1.2em */
+	display: inline-grid;
+}
+
+/* Increase area for code samples */
+.reveal pre code {
+    max-height: 700px;
+}
+
+/* Reveal.Js fragments in code: All personal styles must be "registered" here */
+.reveal .slides section .fragment.mycodemark,
+.reveal .slides section .fragment.my-semi-hide {
+  opacity: 1;
+  visibility: inherit; 
+}
+
+/* Reveal.Js fragments in code: personal styles are customized here */
+.mycodemark.visible {
+    font-weight: bold;
+}
+
+.my-semi-hide.visible {
+    font-weight: 100;
+}
+
+.reveal .slides section .mycodemark-always {
+    font-weight: bold;
+}
+.reveal .slides section .mycodemark-highlight .hljs-comment {
+    font-weight: bold;
+    color: black;
+}
+
+.reveal .slides section .my-semi-hide-always {
+    font-weight: 100;
+}
+
+/* Other customizations ------------------------------ */
+
+/* Small font for links, notes */
+.reveal .slides .small,
+.reveal .slides .small a {
+    font-size: medium;
+}
+
+.reveal .slides .too-much-content {
+    font-size: 80%;
+}
+
+/* Only for debugging */
+/*.slides section.present p .small {
+    font-size: 20px;
+    line-height: 22px;
+}*/
+
+/* Image customizations ------------------------------ */
+
+/* Resize images according to alt text */
+img[alt^=fun-] { width: 800px; }
+img[alt^=funx-] { height: 550px; }
+img[alt^=fullscreen-] {width: 100%; }
+
+/* Remove border for some images --------------------- */
+.reveal section img[alt^=noborder-] {
+    border: none;
+    box-shadow: none;
+    width: 644px;
+}
+
+span.clouditem {
+    padding-left: 0.15em;
+    padding-right: 0.05em;
+    line-height: 90%;
+    letter-spacing: -0.015em;
+}

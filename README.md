@@ -1,33 +1,21 @@
-# Lessons learned...
+Template for using [revealjs](https://github.com/hakimel/reveal.js).
 
-Install `yeoman` and use the [`generator-reveal`](https://github.com/slara/generator-reveal) package.
+# Idea
 
-# Junk
+- Clone this repo
+- Run the install script
+- It makes some opinionated changes (details will follow)
 
-## Prerequisites
+# Initial setup 
 
-- git
-- node
-- grunt
+After cloning this repo:
 
-## Instructions
+- Run `./setup.sh`. It will remove the `.git` folder so you can start from scratch.
 
-tl/dr `./install.sh` otherwhise
+That's it!
 
-- Clone reveal.js: `git clone https://github.com/hakimel/reveal.js.git`
-- Remove the `.git` folder from reveal.js: `rm -rf reveal.js/.git`
-- Install reveal.js: `cd reveal.js && npm install`
-- Softlink/Overwrite `reveal.js/index.html` with `template/index.html`: `cp template/index.html reveal.js/index.html`
-- Softlink/Copy `talk/talk-template.md` to `reveal.js/talk-template.md`: `cp talk/talk-template.md reveal.js/talk-template.md`
+# Project structure
 
+- `slides`: the revealjs presentation
+- `code`: empty folder for code samples
 
-### Create your own git repo
-
-`rm -rf $currentdir/.git`
-
-### Now we can commit everything to our own repository!
-
-```
-git add .
-git commit -am "talk foobar"
-```
