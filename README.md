@@ -26,7 +26,7 @@ That's it!
 # Project structure
 
 - `slides`: the revealjs presentation
-- `code`: empty folder for code samples
+- `code`: empty folder for code samples. Use this folder for live coding samples! If you don't do live coding, you can delete this folder.
 
 # And Windows?
 
