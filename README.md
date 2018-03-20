@@ -33,3 +33,10 @@ That's it!
 Pull requests are welcome! PowerShell or BAT Hackers, where are you?
 
 Or use the minimal bash shell included with Git-for-windows. Or the Full-Linux Support with Windows10. Or Cygwin. Or...
+
+# TODO: Showcases
+
+- Background images with markdown
+- Change highlighting of code samples (step by step)
+- slide customizations using `data-*` attributes in markdown
+
