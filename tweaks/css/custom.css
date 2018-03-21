@@ -84,3 +84,12 @@ span.clouditem {
     line-height: 90%;
     letter-spacing: -0.015em;
 }
+
+
+/* Company logo ---------------------------------------- */
+body {
+    background-image: url(../resources/Softwerkskammer.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 3% 96%;
+}

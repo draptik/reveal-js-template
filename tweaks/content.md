@@ -110,3 +110,9 @@ x---
 - <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;@yourtwitterhandle
 - <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;foo@bar.de
 
+x---
+<!-- .slide: data-background-image="resources/Softwerkskammer.png" data-background-size="cover" data-state="dimmed-less"-->
+
+Using background images...
+
+
