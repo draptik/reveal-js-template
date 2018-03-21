@@ -5,6 +5,7 @@ Template for using [revealjs](https://github.com/hakimel/reveal.js).
 - Clone this repo
 - Run the install script
 - It makes some opinionated changes (details will follow)
+- You have a clean new start for your presentation
 
 # Prerequisites
 
