@@ -40,4 +40,4 @@ Or use the minimal bash shell included with Git-for-windows. Or the Full-Linux S
 - [ ] Background images with markdown
 - [x] Change highlighting of code samples (step by step)
 - [ ] slide customizations using `data-*` attributes in markdown
-
+- [ ] company logo on each slide
