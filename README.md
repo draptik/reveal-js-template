@@ -41,3 +41,13 @@ Or use the minimal bash shell included with Git-for-windows. Or the Full-Linux S
 - [x] Change highlighting of code samples (step by step)
 - [x] slide customizations using `data-*` attributes in markdown
 - [x] company logo on each slide
+
+# Screenshots
+
+![company logo](screenshots/company-logo.png)
+
+![code syntax highlighting](screenshots/code-syntax-highlighting.png)
+
+![backround image](screenshots/background-images.png)
+
+![tagcloud](screenshots/tagcloud.png)

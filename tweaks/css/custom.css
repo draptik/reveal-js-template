@@ -78,6 +78,31 @@ img[alt^=fullscreen-] {width: 100%; }
     width: 644px;
 }
 
+
+/* Slides with background image can be tweaked with the `data-state` class
+    Here: the `dimmed` class
+*/
+.dimmed .slide-background {
+    opacity: 0.25 !important;
+}
+.dimmed-less .slide-background {
+    opacity: 0.4 !important;
+}
+.dimmed-almost-visible .slide-background {
+    opacity: 0.8 !important;
+}
+.dimmed h2, .dimmed p {
+    color: black
+}
+.dimmed p { background-color: white; }
+
+.dimmed-almost-visible h2,
+.dimmed-almost-visible h3,
+.dimmed-almost-visible * {
+    color: black
+}
+
+
 span.clouditem {
     padding-left: 0.15em;
     padding-right: 0.05em;

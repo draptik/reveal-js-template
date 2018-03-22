@@ -18,38 +18,31 @@ x--
 
 bar
 
-x---
-
-<section tagcloud large>
-    <span tagcloud-weight="16">Unit </span>
-    <span tagcloud-weight="44">Currying </span>
-    <span tagcloud-weight="29">Higher Order Functions </span>
-    <span tagcloud-weight="10">Event Sourcing/CQRS </span>
-    <span tagcloud-weight="35">Applicatives </span>
-    <span tagcloud-weight="13">Monad </span>
-    <span tagcloud-weight="30">filter/map/reduce </span>
-    <span tagcloud-weight="18">bind </span>
-    <span tagcloud-weight="40">side effects </span>
-    <span tagcloud-weight="22">purity </span>
-    <span tagcloud-weight="39">honest functions </span>
-    <span tagcloud-weight="19">Functor </span>
-    <span tagcloud-weight="50">Immutability </span>
-    <span tagcloud-weight="34">category theory </span>
-    <span tagcloud-weight="15">Monoid </span>
-    <span tagcloud-weight="29">tuples  </span> 
-    <span tagcloud-weight="17">discriminated unions </span>
-    <span tagcloud-weight="20">elevated types </span>
-    <span tagcloud-weight="33">Typed FP </span>
-    <span tagcloud-weight="28">Either </span>
-    <span tagcloud-weight="34">Option </span>
-    <span tagcloud-weight="14">arrow notation </span>
-    <span tagcloud-weight="24">railway oriented programming </span>
-    <span tagcloud-weight="26">Lambda </span>
-    <span tagcloud-weight="12">Composition </span>
-<section>
 
 x---
 
+## Customized syntax highlighting 
+
+```css
+/* Custom font for code samples: Fira Code ;-) */
+.reveal code {
+  font-family: "Fira Code", "Lato", sans-serif;
+}
+
+/* Tweak size of text in pre (code) blocks */
+.reveal pre {
+    font-size: 0.49em; /* default value: 0.55em */
+    line-height: 1.2em;  /* default value: 1.2em */
+	display: inline-grid;
+}
+
+/* Increase area for code samples */
+.reveal pre code {
+    max-height: 700px;
+}
+```
+
+x---
 
 ```javascript
 let list = [1, 2, 3, 4, 5];
@@ -107,12 +100,89 @@ p |> emailFor // josm@company.com
 
 x---
 
+## Font awesome icons...
+
+- https://fontawesome.com/
 - <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;@yourtwitterhandle
 - <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;foo@bar.de
+- <i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;<i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;<i class="fa fa-keyboard" aria-hidden="true"></i>&nbsp;<i class="fa fa-bluetooth" aria-hidden="true"></i>&nbsp;<i class="fa fa-bug" aria-hidden="true"></i>&nbsp;<i class="fa fa-cloud" aria-hidden="true"></i>&nbsp;<i class="fa fa-coffee" aria-hidden="true"></i>
 
 x---
-<!-- .slide: data-background-image="resources/Softwerkskammer.png" data-background-size="cover" data-state="dimmed-less"-->
 
-Using background images...
+## Background images...
 
+x---
+<!-- .slide: data-background-image="resources/chaos.jpg" data-background-size="cover" -->
 
+x---
+<!-- .slide: data-background-image="resources/chaos.jpg" data-background-size="cover" data-state="dimmed"-->
+
+## Using background images...
+
+See `data-state` attribute for details...
+
+```markdown
+<!-- 
+    .slide: 
+    data-background-image="resources/chaos.jpg" 
+    data-background-size="cover" 
+    data-state="dimmed"
+-->
+
+## Using background images...
+See `data-state` attribute for details...
+```
+
+```css
+.dimmed .slide-background { opacity: 0.25 !important; }
+.dimmed h2, .dimmed p { color: black }
+.dimmed p { background-color: white; }
+```
+
+x---
+
+## Logo in lower left corner
+
+```css
+/* Company logo ---------------------------------------- */
+body {
+    background-image: url(../resources/Softwerkskammer.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 3% 96%;
+}
+```
+
+x---
+
+## Tagcloud plugin
+
+x---
+
+<section tagcloud large>
+    <span tagcloud-weight="16">Unit </span>
+    <span tagcloud-weight="44">Currying </span>
+    <span tagcloud-weight="29">Higher Order Functions </span>
+    <span tagcloud-weight="10">Event Sourcing/CQRS </span>
+    <span tagcloud-weight="35">Applicatives </span>
+    <span tagcloud-weight="13">Monad </span>
+    <span tagcloud-weight="30">filter/map/reduce </span>
+    <span tagcloud-weight="18">bind </span>
+    <span tagcloud-weight="40">side effects </span>
+    <span tagcloud-weight="22">purity </span>
+    <span tagcloud-weight="39">honest functions </span>
+    <span tagcloud-weight="19">Functor </span>
+    <span tagcloud-weight="50">Immutability </span>
+    <span tagcloud-weight="34">category theory </span>
+    <span tagcloud-weight="15">Monoid </span>
+    <span tagcloud-weight="29">tuples  </span> 
+    <span tagcloud-weight="17">discriminated unions </span>
+    <span tagcloud-weight="20">elevated types </span>
+    <span tagcloud-weight="33">Typed FP </span>
+    <span tagcloud-weight="28">Either </span>
+    <span tagcloud-weight="34">Option </span>
+    <span tagcloud-weight="14">arrow notation </span>
+    <span tagcloud-weight="24">railway oriented programming </span>
+    <span tagcloud-weight="26">Lambda </span>
+    <span tagcloud-weight="12">Composition </span>
+<section>
