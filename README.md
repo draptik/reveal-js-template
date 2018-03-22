@@ -21,6 +21,7 @@ Using RevealJs obviously requires NodeJs. This setup does not require NodeJs.
 After cloning this repo:
 
 - Run `./setup.sh`. It will remove the `.git` folder so you can start from scratch.
+- `cd slides && npm install && npm start`
 
 That's it!
 
