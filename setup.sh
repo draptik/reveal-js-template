@@ -30,6 +30,3 @@ rm -rf \
 
 ## inject tweaks
 cp -rf $CURRENTDIR/tweaks/* $CURRENTDIR/slides/
-
-## create folder for code samples
-mkdir $CURRENTDIR/code
