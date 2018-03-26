@@ -1,0 +1,64 @@
+@import url("print/pdf.css");
+
+.reveal pre code {
+    font-family: "Fira Code", "Lato", sans-serif !important;
+}
+
+
+/* Tweak size of text in pre (code) blocks */
+.reveal pre {
+    font-size: 0.49em; /* default value: 0.55em */
+    line-height: 1.2em;  /* default value: 1.2em */
+	display: inline-grid;
+}
+
+
+/* Increase area for code samples */
+.reveal pre code {
+    max-height: 700px;
+}
+
+
+/* Small font for links, notes */
+.reveal .slides .small,
+.reveal .slides .small a {
+    font-size: medium;
+}
+
+.reveal .slides .too-much-content {
+    font-size: 80%;
+}
+
+
+
+/* Slides with background image can be tweaked with the `data-state` class
+    Here: the `dimmed` class
+*/
+.dimmed .slide-background {
+    opacity: 0.25 !important;
+}
+.dimmed-less .slide-background {
+    opacity: 0.4 !important;
+}
+.dimmed-almost-visible .slide-background {
+    opacity: 0.8 !important;
+}
+.dimmed h2, .dimmed p {
+    color: black
+}
+.dimmed p { background-color: white; }
+
+.dimmed-almost-visible h2,
+.dimmed-almost-visible h3,
+.dimmed-almost-visible * {
+    color: black
+}
+
+
+span.clouditem {
+    padding-left: 0.15em;
+    padding-right: 0.05em;
+    line-height: 90%;
+    letter-spacing: -0.015em;
+}
+
