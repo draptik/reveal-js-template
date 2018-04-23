@@ -1,5 +1,11 @@
 @import url("print/pdf.css");
 
+.reveal p,
+.reveal li {
+    line-height: 1.3;
+}
+
+
 .reveal pre code {
     font-family: "Fira Code", "Lato", sans-serif !important;
 }
@@ -30,11 +36,19 @@
 }
 
 
+/* 
+    Sadly, the opacity of background images can't be changed in PDF export.
+    See https://github.com/hakimel/reveal.js/issues/1973 for details. 
 
+    Best options for now are to either
+        - to exclude the background image completely for PDF export
+        - or the change the font on the slide so that text is readable.
+
+*/
 /* Slides with background image can be tweaked with the `data-state` class
     Here: the `dimmed` class
 */
-.dimmed .slide-background {
+/* .reveal .slide-background .dimmed {
     opacity: 0.25 !important;
 }
 .dimmed-less .slide-background {
@@ -42,7 +56,7 @@
 }
 .dimmed-almost-visible .slide-background {
     opacity: 0.8 !important;
-}
+} */
 .dimmed h2, .dimmed p {
     color: black
 }
@@ -61,4 +75,3 @@ span.clouditem {
     line-height: 90%;
     letter-spacing: -0.015em;
 }
-
