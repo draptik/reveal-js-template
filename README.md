@@ -23,9 +23,9 @@ There are 2 theme templates:
 
 After cloning this repo:
 
-- Run `./setup.sh`.
+- Option 1: Light theme. Run `./setup.sh`.
     - It will create a template with a light background template.
-- Run `./setup.sh --dark`.
+- Option 2: Dark theme. Run `./setup.sh --dark`.
     - It will create a template with a dark background template.
 - The `setup.sh` script will remove the `.git` folder so you can start from scratch.
 - `cd slides && npm install && npm start`
