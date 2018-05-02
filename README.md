@@ -52,6 +52,8 @@ How to run a linux bash script on windows?
 
 # Screenshots
 
+## Light theme
+
 ![company logo](screenshots/company-logo.png)
 
 ![code syntax highlighting](screenshots/code-syntax-highlighting.png)
@@ -59,3 +61,11 @@ How to run a linux bash script on windows?
 ![backround image](screenshots/background-images.png)
 
 ![tagcloud](screenshots/tagcloud.png)
+
+## Dark theme
+
+![company logo (dark)](screenshots/company-logo-dark.png)
+
+![code syntax highlighting (dark)](screenshots/code-syntax-highlighting-dark.png)
+
+![tagcloud (dark)](screenshots/tagcloud-dark.png)
