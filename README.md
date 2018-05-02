@@ -4,7 +4,6 @@ Template for using [revealjs](https://github.com/hakimel/reveal.js).
 
 - Clone this repo
 - Run the install script
-- It makes some opinionated changes (details will follow)
 - You have a clean new start for your presentation
 
 # Prerequisites
@@ -18,9 +17,17 @@ Using RevealJs obviously requires NodeJs. This setup does not require NodeJs.
 
 # Initial setup 
 
+There are 2 theme templates: 
+- dark
+- light (default).
+
 After cloning this repo:
 
-- Run `./setup.sh`. It will remove the `.git` folder so you can start from scratch.
+- Run `./setup.sh`.
+    - It will create a template with a light background template.
+- Run `./setup.sh --dark`.
+    - It will create a template with a dark background template.
+- The `setup.sh` script will remove the `.git` folder so you can start from scratch.
 - `cd slides && npm install && npm start`
 
 That's it!
