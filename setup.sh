@@ -40,12 +40,12 @@ cp -rf $CURRENTDIR/tweaks/* $CURRENTDIR/slides/
 if [ "$THEME" == 'dark-theme' ]
 then 
     mv $CURRENTDIR/slides/index-dark.html $CURRENTDIR/slides/index.html
-    rm $CURRENTDIR/slides/index-light.html \
+    rm -f $CURRENTDIR/slides/index-light.html \
         $CURRENTDIR/slides/css/custom-light.css
 elif [ "$THEME" == 'light-theme' ]
 then 
     mv $CURRENTDIR/slides/index-light.html $CURRENTDIR/slides/index.html
-    rm $CURRENTDIR/slides/index-dark.html \
+    rm -f $CURRENTDIR/slides/index-dark.html \
         $CURRENTDIR/slides/css/theme/dark.css
         $CURRENTDIR/slides/css/custom-dark.css
 else exit -1
