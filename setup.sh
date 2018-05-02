@@ -4,6 +4,11 @@
 ## http://stackoverflow.com/a/246128
 CURRENTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+DEFAULT_THEME='light-theme'
+THEME=$DEFAULT_THEME
+
+if [ $1 == '--dark' ]; then THEME='dark-theme'; fi
+
 ## Get reveal.js
 REVEAL_VERSION=3.6.0
 REVEAL_SRC=https://github.com/hakimel/reveal.js/archive/${REVEAL_VERSION}.tar.gz
@@ -30,3 +35,17 @@ rm -rf \
 
 ## inject tweaks
 cp -rf $CURRENTDIR/tweaks/* $CURRENTDIR/slides/
+
+## rename index.html and remove unused theme files
+if [ "$THEME" == 'dark-theme' ]
+then 
+    mv $CURRENTDIR/slides/index-dark.html $CURRENTDIR/slides/index.html
+    rm $CURRENTDIR/slides/index-light.html $CURRENTDIR/slides/css/theme/custom-light.css
+elif [ "$THEME" == 'light-theme' ]
+then 
+    mv $CURRENTDIR/slides/index-light.html $CURRENTDIR/slides/index.html
+    rm $CURRENTDIR/slides/index-dark.html $CURRENTDIR/slides/css/theme/custom-dark.css
+else exit -1
+fi
+
+exit 0
