@@ -72,7 +72,7 @@ How to run a linux bash script on windows?
 
 # Printing notes for usage during presentation
 
-Altough reveal.js provides a nice notes feature, I seldomly stand infront of the presentation laptop to view them.
-Therefore I prefer printed slides with some space for hand-writen notes.
+Although reveal.js provides a nice notes feature, I seldomly stand infront of the presentation laptop to view them.
+Therefore I prefer printed slides with some space for hand-written notes.
 
-The file `convert2notes.hs` uses `pdfjam` to convert a pdf 1-page-per-slide to multiple-pages-to-slide. It requires a TeX installation.
+The file `convert2notes.sh` uses `pdfjam` to convert a pdf 1-page-per-slide to multiple-pages-to-slide. It requires a TeX installation.
