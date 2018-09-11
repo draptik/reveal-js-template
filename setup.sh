@@ -31,7 +31,8 @@ rm -rf \
     $CURRENTDIR/slides/test \
     $CURRENTDIR/slides/CONTRIBUTING.md \
     $CURRENTDIR/slides/demo* \
-    $CURRENTDIR/slides/.travis.yml
+    $CURRENTDIR/slides/.travis.yml \
+    $CURRENTDIR/screenshots
 
 ## inject tweaks
 cp -rf $CURRENTDIR/tweaks/* $CURRENTDIR/slides/
