@@ -10,7 +10,7 @@ THEME=$DEFAULT_THEME
 if [ $1 == '--dark' ]; then THEME='dark-theme'; fi
 
 ## Get reveal.js
-REVEAL_VERSION=3.6.0
+REVEAL_VERSION=3.7.0
 REVEAL_SRC=https://github.com/hakimel/reveal.js/archive/${REVEAL_VERSION}.tar.gz
 wget ${REVEAL_SRC}
 
